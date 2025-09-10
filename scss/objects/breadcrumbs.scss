@@ -1,0 +1,23 @@
+.cmp_breadcrumbs {
+	ol {
+		@include list-unstyled();
+		font-size: $font-size-sm;
+		padding-top: $spacer;
+
+	> li {
+		display: contents;
+
+			a {
+				display: contents;
+				color: $black;
+				text-decoration: none;
+
+				&:hover,
+				&:focus,
+				&:active {
+					color: $primary;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,69 @@
+.page_issue {	
+	.page_title  {
+		color: $white;
+		font-size: $font-size-lg-extra;
+		line-height: $line-height-sm;
+	}
+
+	.heading {
+		padding-top: $spacer;
+		padding-bottom: $spacer * 3;
+		background: $gray-bg-dark;
+		color: $white;
+
+		.cover {
+			border: 1px solid $primary;
+			background: $primary-dark;
+			
+			img {
+				padding: 3rem;
+			}
+		}
+
+		.galleys {
+			.title_galleys_G, 
+			h3 {
+				color: $white;
+			}
+		}
+
+		.share_block {
+			text-align: right;
+			margin-bottom: $spacer * 2;
+			
+			.share-list {
+				li {
+					a {
+						color: $white;
+
+						i {
+							border: 1px solid $white;
+						}
+					}
+				}
+			}
+		}
+
+		.galleys_links {
+			> li {
+				.obj_galley_link {
+					background: $gray-bg-dark;
+					color: $white;
+					border-radius: 6px;
+					border: 1px solid $gray-bg-dark;
+
+					
+					&:hover {
+						background: $primary-dark;
+						color: $white;
+						border: 1px solid $primary-dark;
+					}
+				}
+			}
+		}
+	}
+
+	.articles-list-row {
+		justify-content: center;
+	}
+}
