@@ -21,7 +21,6 @@
 	<div class="pkp_structure_page">
 		{* Header *}
 
-		{include file="frontend/components/headerMobile.tpl"}
 		{include file="frontend/components/headerDesktop.tpl"}
 
 
