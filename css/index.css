@@ -3713,7 +3713,6 @@ a:hover, a:focus, a:active {
 }
 .pkp_structure_footer_wrapper .navigation_footer_wrapper .navigation_footer li a {
   opacity: 1;
-  color: #fff;
   text-decoration: none;
 }
 .pkp_structure_footer_wrapper .navigation_footer_wrapper .navigation_footer li a:hover, .pkp_structure_footer_wrapper .navigation_footer_wrapper .navigation_footer li a:focus, .pkp_structure_footer_wrapper .navigation_footer_wrapper .navigation_footer li a:active {
