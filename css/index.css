@@ -65,10 +65,10 @@
   --bs-dark-border-subtle: #adb5bd;
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 33, 37, 41;
-  --bs-font-sans-serif: "Roboto", serif;
+  --bs-font-sans-serif: "Work Sans", sans-serif;
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
-  --bs-body-font-family: "Roboto", serif;
+  --bs-body-font-family: "Work Sans", sans-serif;
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
@@ -3384,57 +3384,16 @@ a:hover, a:focus, a:active {
   color: #3f5c2b;
 }
 
-.header_top_G {
-  border-bottom: 1px solid #3f5c2b;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  margin-bottom: 1rem;
-}
-.header_top_G .logo_extra_wrapper_G .logo_ucv {
-  width: 220px;
-}
-
-.pkp_structure_head {
-  font-family: "Roboto Slab", serif;
-}
-.pkp_structure_head .head_innerwrapper_G {
+.pkp_structure_head .head-innerwrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-.pkp_structure_head .pkp_navigation_search_wrapper {
-  margin-right: 0.5rem;
-}
-.pkp_structure_head .pkp_navigation_search_wrapper .pkp_search {
-  width: 100%;
-  position: relative;
-}
-.pkp_structure_head .pkp_navigation_search_wrapper .pkp_search .form-control {
-  border: 1px solid #eaebe3;
-  background: #eaebe3;
-  padding-left: 2.25rem;
-  width: 100%;
-}
-@media (min-width: 768px) {
-  .pkp_structure_head .pkp_navigation_search_wrapper .pkp_search .form-control {
-    width: 250px;
-  }
-}
-.pkp_structure_head .pkp_navigation_search_wrapper .pkp_search .bi-search {
-  font-size: 1rem;
-  position: absolute;
-  top: 6px;
-  left: 12px;
-}
-.pkp_structure_head .pkp_site_name_wrapper .pkp_site_name {
-  display: inline-block;
-  text-align: center;
-}
-.pkp_structure_head .pkp_site_name_wrapper .pkp_site_name .logo {
-  width: 250px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
 }
 .pkp_structure_head.is-desktop .pkp_site_nav_menu {
   padding-top: 1rem;
@@ -3447,6 +3406,9 @@ a:hover, a:focus, a:active {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
+}
+.pkp_structure_head.is-desktop .site-name-wrapper .pkp_site_name_wrapper .logo {
+  width: 180px;
 }
 .pkp_structure_head.is-desktop .pkp_navigation_primary,
 .pkp_structure_head.is-desktop .pkp_navigation_submission {
@@ -3461,7 +3423,8 @@ a:hover, a:focus, a:active {
   margin-right: 1rem;
   position: relative;
   cursor: pointer;
-  font-size: 1.125rem;
+  font-size: 1.25rem;
+  text-transform: uppercase;
 }
 .pkp_structure_head.is-desktop .pkp_navigation_primary > li:hover, .pkp_structure_head.is-desktop .pkp_navigation_primary > li:focus, .pkp_structure_head.is-desktop .pkp_navigation_primary > li:active,
 .pkp_structure_head.is-desktop .pkp_navigation_submission > li:hover,
@@ -3485,13 +3448,12 @@ a:hover, a:focus, a:active {
   padding-left: 0;
   list-style: none;
   position: absolute;
+  background: #fff;
   padding: 1rem;
   top: 35px;
   left: -1rem;
   min-width: 180px;
-  background: #fff;
-  border: 1px solid #6c757d;
-  z-index: 1000;
+  border: 1px solid #e2e2e0;
 }
 .pkp_structure_head.is-desktop .pkp_navigation_primary > li .submenu > li,
 .pkp_structure_head.is-desktop .pkp_navigation_submission > li .submenu > li {
@@ -3499,8 +3461,22 @@ a:hover, a:focus, a:active {
   line-height: 1.25;
   margin-right: 0;
   margin-bottom: 0.3333333333rem;
+  text-transform: none;
 }
-.pkp_structure_head .menu_group_wrapper_G {
+.pkp_structure_head.is-desktop .pkp_navigation_submission li a {
+  padding: 0.25rem 1rem;
+  border-radius: 5px;
+  border: 1px solid #e2e2e0;
+  color: #fff;
+  font-size: 1rem;
+  background: #121b23;
+}
+.pkp_structure_head.is-desktop .pkp_navigation_submission li a:hover, .pkp_structure_head.is-desktop .pkp_navigation_submission li a:focus, .pkp_structure_head.is-desktop .pkp_navigation_submission li a:active {
+  color: #3f5c2b;
+  background: #90c715;
+  border: 1px solid #e2e2e0;
+}
+.pkp_structure_head .menu-group-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3509,9 +3485,9 @@ a:hover, a:focus, a:active {
           justify-content: end;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+}
+.pkp_structure_head .pkp_navigation_search_wrapper {
+  margin-right: 1rem;
 }
 .pkp_structure_head .pkp_navigation_user_wrapper {
   display: -webkit-box;
@@ -3537,18 +3513,20 @@ a:hover, a:focus, a:active {
   position: absolute;
   padding-left: 0;
   list-style: none;
-  top: 40px;
+  border: 1px solid #e2e2e0;
+  top: 30px;
   padding: 0.5rem;
   width: 140px;
   left: 0;
   z-index: 1000;
-  background: #3f5c2b;
+  background: #fff;
 }
 .pkp_structure_head .pkp_navigation_user_wrapper .pkp_navigation_user > li.menuitem_lang .submenu a, .pkp_structure_head .pkp_navigation_user_wrapper .pkp_navigation_user > li.profile .submenu a {
   text-decoration: none;
+  color: #212529;
 }
 .pkp_structure_head .pkp_navigation_user_wrapper .pkp_navigation_user > li.menuitem_lang .submenu a:hover, .pkp_structure_head .pkp_navigation_user_wrapper .pkp_navigation_user > li.menuitem_lang .submenu a:focus, .pkp_structure_head .pkp_navigation_user_wrapper .pkp_navigation_user > li.menuitem_lang .submenu a:active, .pkp_structure_head .pkp_navigation_user_wrapper .pkp_navigation_user > li.profile .submenu a:hover, .pkp_structure_head .pkp_navigation_user_wrapper .pkp_navigation_user > li.profile .submenu a:focus, .pkp_structure_head .pkp_navigation_user_wrapper .pkp_navigation_user > li.profile .submenu a:active {
-  color: #fff;
+  color: #90c715;
 }
 .pkp_structure_head .pkp_navigation_user_wrapper .pkp_navigation_user > li.menuitem_lang .submenu {
   width: auto;
@@ -3560,23 +3538,23 @@ a:hover, a:focus, a:active {
   text-transform: uppercase;
 }
 .pkp_structure_head .pkp_navigation_user_wrapper .pkp_navigation_user > li.menuitem_lang a {
+  color: #212529;
   text-decoration: none;
+}
+.pkp_structure_head .pkp_navigation_user_wrapper .pkp_navigation_user > li.menuitem_lang a:hover, .pkp_structure_head .pkp_navigation_user_wrapper .pkp_navigation_user > li.menuitem_lang a:focus, .pkp_structure_head .pkp_navigation_user_wrapper .pkp_navigation_user > li.menuitem_lang a:active {
+  color: #90c715;
 }
 .pkp_structure_head .pkp_navigation_user_wrapper .pkp_navigation_user > li.profile {
-  text-decoration: none;
-  padding: 0.5rem 1rem;
+  padding: 0.25rem 1rem;
   font-size: 0.9375rem;
   cursor: pointer;
-  border: 1px solid #3f5c2b;
-  background: #3f5c2b;
-  color: #90c715;
 }
-.pkp_structure_head .pkp_navigation_user_wrapper .pkp_navigation_user > li.profile > a {
+.pkp_structure_head .pkp_navigation_user_wrapper .pkp_navigation_user > li.profile a {
+  color: #212529;
   text-decoration: none;
 }
-.pkp_structure_head .pkp_navigation_user_wrapper .pkp_navigation_user > li.profile > a:hover, .pkp_structure_head .pkp_navigation_user_wrapper .pkp_navigation_user > li.profile > a:focus, .pkp_structure_head .pkp_navigation_user_wrapper .pkp_navigation_user > li.profile > a:active {
+.pkp_structure_head .pkp_navigation_user_wrapper .pkp_navigation_user > li.profile a:hover, .pkp_structure_head .pkp_navigation_user_wrapper .pkp_navigation_user > li.profile a:focus, .pkp_structure_head .pkp_navigation_user_wrapper .pkp_navigation_user > li.profile a:active {
   color: #90c715;
-  background: #3f5c2b;
 }
 
 .pkp_structure_head.is-desktop {
@@ -3596,14 +3574,12 @@ a:hover, a:focus, a:active {
     display: none;
   }
 }
-.pkp_structure_head.is-mobile .site_name_wrapper_G .pkp_site_name {
-  text-align: left;
-}
-.pkp_structure_head.is-mobile .site_name_wrapper_G .pkp_site_name .logo {
-  width: 200px;
+.pkp_structure_head.is-mobile .pkp_site_name_wrapper .pkp_site_name .logo {
+  width: 220px;
 }
 .pkp_structure_head.is-mobile .pkp_head_wrapper .btn-menu {
   font-size: 3rem;
+  color: #90c715;
   text-decoration: none;
   text-align: right;
   display: block;
@@ -3615,7 +3591,7 @@ a:hover, a:focus, a:active {
   position: relative;
 }
 .pkp_structure_head .pkp_head_wrapper.overlay-menu-wrapper {
-  background-color: #fff;
+  background-color: #90c715;
   position: fixed;
   top: 0;
   left: 0;
@@ -3629,16 +3605,51 @@ a:hover, a:focus, a:active {
 }
 .pkp_structure_head .pkp_head_wrapper.overlay-menu-wrapper .pkp_navigation_user_wrapper {
   margin-top: 2rem;
-  margin-bottom: 1rem;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+}
+.pkp_structure_head .pkp_head_wrapper.overlay-menu-wrapper .pkp_navigation_user_wrapper .menuitem_lang {
+  color: #fff;
+}
+.pkp_structure_head .pkp_head_wrapper.overlay-menu-wrapper .pkp_navigation_user_wrapper .menuitem_lang a {
+  color: #fff;
+  text-decoration: none;
+}
+.pkp_structure_head .pkp_head_wrapper.overlay-menu-wrapper .pkp_navigation_user_wrapper .menuitem_lang a:hover, .pkp_structure_head .pkp_head_wrapper.overlay-menu-wrapper .pkp_navigation_user_wrapper .menuitem_lang a:focus, .pkp_structure_head .pkp_head_wrapper.overlay-menu-wrapper .pkp_navigation_user_wrapper .menuitem_lang a:active {
+  color: #fff;
+}
+.pkp_structure_head .pkp_head_wrapper.overlay-menu-wrapper .pkp_navigation_user_wrapper .profile {
+  color: #fff;
+}
+.pkp_structure_head .pkp_head_wrapper.overlay-menu-wrapper .pkp_navigation_user_wrapper .profile a {
+  color: #fff;
+  text-decoration: none;
+}
+.pkp_structure_head .pkp_head_wrapper.overlay-menu-wrapper .pkp_navigation_user_wrapper .profile a:hover, .pkp_structure_head .pkp_head_wrapper.overlay-menu-wrapper .pkp_navigation_user_wrapper .profile a:focus, .pkp_structure_head .pkp_head_wrapper.overlay-menu-wrapper .pkp_navigation_user_wrapper .profile a:active {
+  color: #fff;
+}
+.pkp_structure_head .pkp_head_wrapper.overlay-menu-wrapper .pkp_navigation_search_wrapper {
+  margin-top: 1rem;
+  margin-right: 0;
+}
+.pkp_structure_head .pkp_head_wrapper.overlay-menu-wrapper .pkp_navigation_search_wrapper .pkp_search {
+  width: 100%;
+  position: relative;
+}
+.pkp_structure_head .pkp_head_wrapper.overlay-menu-wrapper .pkp_navigation_search_wrapper .pkp_search .form-control {
+  border: 1px solid #fff;
+  background: #90c715;
+}
+.pkp_structure_head .pkp_head_wrapper.overlay-menu-wrapper .pkp_navigation_search_wrapper .pkp_search .bi-search {
+  font-size: 1.25rem;
+  position: absolute;
+  top: 0.15rem;
+  right: 0.5rem;
+  color: #fff;
+}
+.pkp_structure_head .pkp_head_wrapper.overlay-menu-wrapper .btn-menu {
+  color: #fff;
 }
 .pkp_structure_head .pkp_head_wrapper.overlay-menu-wrapper .pkp_site_nav_menu {
-  background: #fff;
+  background: #90c715;
   padding: 0;
 }
 .pkp_structure_head .pkp_head_wrapper.overlay-menu-wrapper .pkp_site_nav_menu .pkp_navigation_primary_row {
@@ -3653,22 +3664,21 @@ a:hover, a:focus, a:active {
 }
 .pkp_structure_head .pkp_head_wrapper.overlay-menu-wrapper .pkp_site_nav_menu .pkp_navigation_primary_row .pkp_navigation_primary li,
 .pkp_structure_head .pkp_head_wrapper.overlay-menu-wrapper .pkp_site_nav_menu .pkp_navigation_primary_row .pkp_navigation_submission li {
+  color: #fff;
   font-size: 1.25rem;
   display: block;
   cursor: pointer;
-  color: #212529;
-  margin-bottom: 0.5rem;
 }
 .pkp_structure_head .pkp_head_wrapper.overlay-menu-wrapper .pkp_site_nav_menu .pkp_navigation_primary_row .pkp_navigation_primary li a,
 .pkp_structure_head .pkp_head_wrapper.overlay-menu-wrapper .pkp_site_nav_menu .pkp_navigation_primary_row .pkp_navigation_submission li a {
   text-decoration: none;
-  color: #212529;
+  color: #fff;
 }
 .pkp_structure_head .pkp_head_wrapper.overlay-menu-wrapper .pkp_site_nav_menu .pkp_navigation_primary_row .pkp_navigation_primary li a:hover, .pkp_structure_head .pkp_head_wrapper.overlay-menu-wrapper .pkp_site_nav_menu .pkp_navigation_primary_row .pkp_navigation_primary li a:focus, .pkp_structure_head .pkp_head_wrapper.overlay-menu-wrapper .pkp_site_nav_menu .pkp_navigation_primary_row .pkp_navigation_primary li a:active,
 .pkp_structure_head .pkp_head_wrapper.overlay-menu-wrapper .pkp_site_nav_menu .pkp_navigation_primary_row .pkp_navigation_submission li a:hover,
 .pkp_structure_head .pkp_head_wrapper.overlay-menu-wrapper .pkp_site_nav_menu .pkp_navigation_primary_row .pkp_navigation_submission li a:focus,
 .pkp_structure_head .pkp_head_wrapper.overlay-menu-wrapper .pkp_site_nav_menu .pkp_navigation_primary_row .pkp_navigation_submission li a:active {
-  color: #90c715;
+  opacity: 0.5;
 }
 .pkp_structure_head .pkp_head_wrapper.overlay-menu-wrapper .pkp_site_nav_menu .pkp_navigation_primary_row .pkp_navigation_primary li .submenu,
 .pkp_structure_head .pkp_head_wrapper.overlay-menu-wrapper .pkp_site_nav_menu .pkp_navigation_primary_row .pkp_navigation_submission li .submenu {
@@ -3684,17 +3694,12 @@ a:hover, a:focus, a:active {
   margin-bottom: 0.25rem;
 }
 
-li .bi.bi-caret-down-fill {
-  font-size: 0.75rem;
-  margin-right: 0.25rem;
-}
-
 .pkp_structure_footer_wrapper {
   padding-top: 4rem;
   padding-bottom: 2rem;
   background: #303030;
   color: #fff;
-  font-family: "Roboto", serif;
+  font-family: "Work Sans", sans-serif;
 }
 .pkp_structure_footer_wrapper .navigation_footer_wrapper {
   text-align: center;
@@ -3783,7 +3788,7 @@ li .bi.bi-caret-down-fill {
   font-weight: 300;
   font-size: 2.25rem;
   line-height: 1.05;
-  font-family: "Roboto Slab", serif;
+  font-family: "Work Sans", sans-serif;
   margin-bottom: 2rem;
   text-align: center;
 }
@@ -3817,7 +3822,7 @@ li .bi.bi-caret-down-fill {
           align-items: center;
 }
 .social_list_wrapper .title_social {
-  font-family: "Roboto Slab", serif;
+  font-family: "Work Sans", sans-serif;
   margin-right: 0.5rem;
 }
 .social_list_wrapper .social_list {
@@ -3845,7 +3850,7 @@ li .bi.bi-caret-down-fill {
   list-style: none;
   font-size: 0.875rem;
   padding-top: 0.5rem;
-  font-family: "Roboto", serif;
+  font-family: "Work Sans", sans-serif;
 }
 @media (min-width: 768px) {
   .cmp_breadcrumbs ol {
@@ -3922,7 +3927,7 @@ li .bi.bi-caret-down-fill {
   line-height: 1.25;
   font-weight: 400;
   margin-top: 0.5rem;
-  font-family: "Roboto Slab", serif;
+  font-family: "Work Sans", sans-serif;
 }
 .obj_announcement_summary .title a {
   text-decoration: none;
@@ -3932,7 +3937,7 @@ li .bi.bi-caret-down-fill {
   color: #3f5c2b;
 }
 .obj_announcement_summary .date {
-  font-family: "Roboto", serif;
+  font-family: "Work Sans", sans-serif;
   font-size: 0.875rem;
   line-height: 1.25;
 }
@@ -3990,7 +3995,7 @@ li .bi.bi-caret-down-fill {
   cursor: pointer;
   font-size: 1.125rem;
   position: relative;
-  font-family: "Roboto Slab", serif;
+  font-family: "Work Sans", sans-serif;
 }
 .btn .bi-plus {
   background: #3f5c2b;
@@ -4068,7 +4073,7 @@ li .bi.bi-caret-down-fill {
 
 .share_block .title {
   font-size: 1.25rem;
-  font-family: "Roboto", serif;
+  font-family: "Work Sans", sans-serif;
   font-weight: 700;
 }
 .share_block .share-list {
@@ -4203,7 +4208,7 @@ li .bi.bi-caret-down-fill {
 }
 .highlighted-item-wrapper .highlighted-item-text .title_highlighted {
   color: #3f5c2b;
-  font-family: "Roboto Slab", serif;
+  font-family: "Work Sans", sans-serif;
   font-size: 1.75rem;
   line-height: 1.05;
 }
@@ -4215,7 +4220,7 @@ li .bi.bi-caret-down-fill {
   }
 }
 .highlighted-item-wrapper .highlighted-item-text .subtitle_highlighted {
-  font-family: "Roboto", serif;
+  font-family: "Work Sans", sans-serif;
   font-size: 1rem;
   line-height: 1.25;
   color: #3f5c2b;
@@ -4254,7 +4259,7 @@ li .bi.bi-caret-down-fill {
   text-align: center;
   font-size: 2.5rem;
   color: #565c5c;
-  font-family: "Roboto Slab", serif;
+  font-family: "Work Sans", sans-serif;
   color: #212529;
 }
 .categories_wrapper .categories_list {
@@ -4273,7 +4278,7 @@ li .bi.bi-caret-down-fill {
 }
 .categories_wrapper .categories_list div a {
   color: #3f5c2b;
-  font-family: "Roboto Slab", serif;
+  font-family: "Work Sans", sans-serif;
   text-decoration: none;
   text-align: center;
   display: block;
@@ -4302,7 +4307,7 @@ li .bi.bi-caret-down-fill {
   font-weight: 400;
   color: #fff;
   text-decoration: none;
-  font-family: "Roboto Slab", serif;
+  font-family: "Work Sans", sans-serif;
 }
 .banner-item .title-wrapper .bi-plus {
   background: #3f5c2b;
@@ -4328,7 +4333,7 @@ li .bi.bi-caret-down-fill {
 }
 .team-member-summary .name {
   font-size: 1.125rem;
-  font-family: "Roboto Slab", serif;
+  font-family: "Work Sans", sans-serif;
   font-weight: 400;
 }
 .team-member-summary .link {
@@ -4347,7 +4352,7 @@ li .bi.bi-caret-down-fill {
   line-height: 1.25;
   font-weight: 400;
   margin-top: 0.5rem;
-  font-family: "Roboto Slab", serif;
+  font-family: "Work Sans", sans-serif;
 }
 @media (min-width: 576px) {
   .obj_monograph_summary .title {
@@ -4385,7 +4390,7 @@ li .bi.bi-caret-down-fill {
   font-size: 2.25rem;
   line-height: 1.25;
   font-weight: 300;
-  font-family: "Roboto Slab", serif;
+  font-family: "Work Sans", sans-serif;
   margin-bottom: 1rem;
 }
 @media (min-width: 768px) {
@@ -4395,7 +4400,7 @@ li .bi.bi-caret-down-fill {
   }
 }
 .obj_monograph_full .header_monograph_wrapper .subtitle {
-  font-family: "Roboto", serif;
+  font-family: "Work Sans", sans-serif;
   margin-bottom: 3rem;
   font-size: 1.25rem;
 }
@@ -4427,7 +4432,7 @@ li .bi.bi-caret-down-fill {
 .obj_monograph_full .doi .label,
 .obj_monograph_full .published .label,
 .obj_monograph_full .authors .label {
-  font-family: "Roboto", serif;
+  font-family: "Work Sans", sans-serif;
   font-size: 1rem;
   display: inline-block;
   font-weight: 500;
@@ -4502,7 +4507,7 @@ li .bi.bi-caret-down-fill {
   font-weight: 300;
   font-size: 2.25rem;
   line-height: 1.05;
-  font-family: "Roboto Slab", serif;
+  font-family: "Work Sans", sans-serif;
   margin-bottom: 2rem;
 }
 .obj_monograph_full .chapters_list .chapter_summary {
@@ -4547,7 +4552,7 @@ li .bi.bi-caret-down-fill {
 .chapter_summary .title {
   font-size: 1rem;
   line-height: 1.5;
-  font-family: "Roboto Slab", serif;
+  font-family: "Work Sans", sans-serif;
   color: #212529;
   margin-bottom: 1rem;
 }
@@ -4560,7 +4565,7 @@ li .bi.bi-caret-down-fill {
 }
 .files .cmp_download_link {
   display: inline-block;
-  font-family: "Roboto Slab", serif;
+  font-family: "Work Sans", sans-serif;
   font-size: 0.9375rem;
   background-color: #f7f8ed;
   text-decoration: none;
@@ -4579,7 +4584,7 @@ li .bi.bi-caret-down-fill {
   font-size: 2.25rem;
   line-height: 1.25;
   font-weight: 300;
-  font-family: "Roboto Slab", serif;
+  font-family: "Work Sans", sans-serif;
   margin-bottom: 1rem;
 }
 @media (min-width: 768px) {
@@ -4589,7 +4594,7 @@ li .bi.bi-caret-down-fill {
   }
 }
 .obj_chapter .subtitle {
-  font-family: "Roboto", serif;
+  font-family: "Work Sans", sans-serif;
   margin-bottom: 3rem;
   font-size: 1.25rem;
 }
@@ -4621,7 +4626,7 @@ li .bi.bi-caret-down-fill {
 .obj_chapter .doi .label,
 .obj_chapter .published .label,
 .obj_chapter .authors .label {
-  font-family: "Roboto", serif;
+  font-family: "Work Sans", sans-serif;
   font-size: 1rem;
   display: inline-block;
   font-weight: 500;
@@ -4678,7 +4683,7 @@ li .bi.bi-caret-down-fill {
   font-weight: 300;
   font-size: 2.25rem;
   line-height: 1.05;
-  font-family: "Roboto Slab", serif;
+  font-family: "Work Sans", sans-serif;
   margin-bottom: 2rem;
 }
 .obj_chapter .chapters_list .chapter_summary .files {
@@ -4698,7 +4703,7 @@ li .bi.bi-caret-down-fill {
   font-weight: 300;
   font-size: 2.25rem;
   line-height: 1.05;
-  font-family: "Roboto Slab", serif;
+  font-family: "Work Sans", sans-serif;
   margin-bottom: 2rem;
   text-align: center;
 }
@@ -4799,7 +4804,7 @@ li .bi.bi-caret-down-fill {
   background: none;
 }
 .page_homepage .monographs_list_wrapper .monographs_list_title {
-  font-family: "Roboto Slab", serif;
+  font-family: "Work Sans", sans-serif;
   font-weight: 300;
   font-size: 2.25rem;
   text-align: center;
@@ -4842,7 +4847,7 @@ li .bi.bi-caret-down-fill {
 .page_login .title_page {
   font-size: 2.25rem;
   font-weight: 300;
-  font-family: "Roboto Slab", serif;
+  font-family: "Work Sans", sans-serif;
 }
 .page_login .btn-link {
   margin-left: 0.5rem;
@@ -4854,7 +4859,7 @@ li .bi.bi-caret-down-fill {
 .page_register .title_page {
   font-size: 2.25rem;
   font-weight: 300;
-  font-family: "Roboto Slab", serif;
+  font-family: "Work Sans", sans-serif;
 }
 .page_register .contexts {
   padding-left: 0;
@@ -4887,14 +4892,14 @@ li .bi.bi-caret-down-fill {
 .page_search .title_page {
   margin-top: 3rem;
   font-weight: 300;
-  font-family: "Roboto Slab", serif;
+  font-family: "Work Sans", sans-serif;
 }
 .page_search .pkp_search {
   margin-top: 2rem;
 }
 .page_search .monograph_count {
   font-weight: 400;
-  font-family: "Roboto Slab", serif;
+  font-family: "Work Sans", sans-serif;
   color: #90c715;
 }
 .page_search .monographs_list {
@@ -4905,12 +4910,12 @@ li .bi.bi-caret-down-fill {
 }
 
 .page_submissions .title_page {
-  font-family: "Roboto Slab", serif;
+  font-family: "Work Sans", sans-serif;
   font-weight: 300;
 }
 
 .page_contact .title_page {
-  font-family: "Roboto Slab", serif;
+  font-family: "Work Sans", sans-serif;
   font-weight: 300;
 }
 .page_contact .title_text_block {
@@ -4918,7 +4923,7 @@ li .bi.bi-caret-down-fill {
   font-weight: 400;
   margin-bottom: 1rem;
   margin-top: 2rem;
-  font-family: "Roboto Slab", serif;
+  font-family: "Work Sans", sans-serif;
 }
 
 .page_display .header_view_G {
@@ -4940,19 +4945,19 @@ li .bi.bi-caret-down-fill {
   padding-bottom: 4rem;
 }
 .page .title_page {
-  font-family: "Roboto Slab", serif;
+  font-family: "Work Sans", sans-serif;
   font-weight: 300;
 }
 .page .intro_text {
   font-size: 1.25rem;
   font-weight: 300;
-  font-family: "Roboto Slab", serif;
+  font-family: "Work Sans", sans-serif;
   margin-bottom: 4rem;
 }
 .page .title_text_block {
   font-size: 1.75rem;
   font-weight: 300;
-  font-family: "Roboto Slab", serif;
+  font-family: "Work Sans", sans-serif;
   margin-bottom: 1rem;
   margin-top: 2rem;
   color: #90c715;
@@ -4962,7 +4967,7 @@ li .bi.bi-caret-down-fill {
   margin-bottom: 4rem;
 }
 .page .cmp_form fieldset legend {
-  font-family: "Roboto Slab", serif;
+  font-family: "Work Sans", sans-serif;
   color: #90c715;
   margin-top: 1rem;
 }
@@ -4975,7 +4980,7 @@ li .bi.bi-caret-down-fill {
 .page .editorial-team-wrapper .title {
   text-align: center;
   font-size: 2.25rem;
-  font-family: "Roboto Slab", serif;
+  font-family: "Work Sans", sans-serif;
   margin-bottom: 2rem;
   font-weight: 300;
 }
@@ -4991,11 +4996,11 @@ li .bi.bi-caret-down-fill {
 
 .page_privacy .title_page {
   font-weight: 300;
-  font-family: "Roboto Slab", serif;
+  font-family: "Work Sans", sans-serif;
 }
 
 .page_about .title_page {
-  font-family: "Roboto Slab", serif;
+  font-family: "Work Sans", sans-serif;
   font-weight: 300;
 }
 .page_about .text_wrapper {
@@ -5016,7 +5021,7 @@ li .bi.bi-caret-down-fill {
 .page_catalog_category .title_page,
 .page_catalog_series .title_page,
 .page_catalog_new_releases .title_page {
-  font-family: "Roboto Slab", serif;
+  font-family: "Work Sans", sans-serif;
   margin-top: 2rem;
   margin-bottom: 2rem;
   font-weight: 300;
@@ -5034,7 +5039,7 @@ li .bi.bi-caret-down-fill {
 .page_catalog_new_releases .intro_text {
   font-size: 1.25rem;
   font-weight: 300;
-  font-family: "Roboto Slab", serif;
+  font-family: "Work Sans", sans-serif;
   margin-bottom: 4rem;
 }
 .page_catalog .series_list_wrapper,
@@ -5079,7 +5084,7 @@ li .bi.bi-caret-down-fill {
   line-height: 1.25;
   font-weight: 400;
   margin-top: 2rem;
-  font-family: "Roboto Slab", serif;
+  font-family: "Work Sans", sans-serif;
   color: #fff;
 }
 .page_catalog .categories_wrapper,
