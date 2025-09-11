@@ -1,0 +1,21 @@
+.page_about {
+	.title_page {
+		font-family: $font-family-serif;
+		font-weight: $font-weight-light;	
+	}
+
+	//.intro_text {
+		//@include media-breakpoint-up(md) {
+			//width: 60%;
+		//}
+	//}
+
+	.text_wrapper {
+		margin-top: $spacer * 4;
+	}
+
+	.categories_wrapper {
+		margin-top: $spacer * 6;
+		margin-bottom: $spacer * 6;
+	}
+}

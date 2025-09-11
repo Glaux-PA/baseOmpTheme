@@ -1,29 +1,15 @@
 .page_contact {
-	.title-text-block {
+	.title_page {
+		font-family: $font-family-serif;
+		font-weight: $font-weight-light;	
+	}
+
+	.title_text_block {
 		font-size: $font-size-lg;
-		font-weight: $font-weight-semibold;
+		font-weight: $font-weight-normal;
 		margin-bottom: $spacer;
 		margin-top: $spacer * 2;
-		font-family: $font-family-sans-serif;
-	}
-
-	.contact_section {
-		@include media-breakpoint-up(sm) {
-			display: flex;
-			justify-content: space-between;
-		}
-
-		.primary,
-		.support {
-			padding: $spacer * 2;
-			background: $white;
-			box-shadow: 0px 0px 40px 0px $gray-bg;
-			border-radius: $border-radius;
-			margin-bottom: $spacer * 2;
-
-			@include media-breakpoint-up(sm) {
-				width: 47%;
-			}
-		}
+		font-family: $font-family-serif;
 	}
 }
+
