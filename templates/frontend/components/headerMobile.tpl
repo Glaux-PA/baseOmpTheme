@@ -6,8 +6,8 @@
  *}
 
 <header class="pkp_structure_head is-mobile" id="headerNavigationContainer" role="banner">
-	{* Revisar Skip to content nav links *}
-	{* {include file="frontend/components/skipLinks.tpl"} *}
+			{* Skip to content nav links *}
+			{include file="frontend/components/skipLinks.tpl"}
 
 	<div class="pkp_head_wrapper">
 		<div class="container">
