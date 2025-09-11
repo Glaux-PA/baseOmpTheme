@@ -1,12 +1,13 @@
-.page_article_html_G {
+.page_display {
+	.header_view_G {
+		margin-top: $spacer * 3;
+		margin-bottom: $spacer * 2;
 
-	.sidebar-container.sidebar-collapsed {
-		display: none !important;
-	}
-
-	.content_view {
-		iframe {
-			width: 100%;
+		.btn-group {
+			display: flex;
+			justify-content: space-between;
+			margin-top: $spacer;
+			margin-bottom: $spacer;
 		}
 	}
 }

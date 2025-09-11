@@ -1,5 +1,25 @@
 .page_search {
-	.page_title  {
+	.title_page {
 		margin-top: $spacer * 3;
+		font-weight: $font-weight-light;
+		font-family: $font-family-serif;
+	}
+
+	.pkp_search {
+		margin-top: $spacer * 2;
+	}
+
+	.monograph_count {
+		font-weight: $font-weight-normal;
+		font-family: $font-family-serif;
+		color: $primary;
+	}
+
+	.monographs_list {
+		margin-top: $spacer * 3;
+	}
+
+	.btn {
+		margin-top: $spacer;
 	}
 }

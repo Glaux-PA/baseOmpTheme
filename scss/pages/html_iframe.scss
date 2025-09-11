@@ -1,26 +1,15 @@
 
 body  {
-    font-family: 'Work Sans', sans-serif;
+    font-family: "Roboto", serif;
     box-sizing: border-box;
     color: black;
     line-height: 1.3em;
     margin: 0 !important;
-    padding: 0;
     padding-right: 50px;
-    font-size: 1.125rem;
-
-    p {
-        font-size: 1.125rem !important;
-        line-height: 1.3em;
-    }
-
-    b,
-    strong {
-      font-weight: 600;
-    }
+    font-size: 1.25rem;
 
     a {
-        color:  #0e3692;
+        color:  #90c715;
 
         &:hover,
         &:focus,
@@ -29,23 +18,10 @@ body  {
         }
     }
 
-    h1.h1,
-    h2.h1 {
+    h1.h1 {
         font-size: 2rem;
-        font-weight: 600 !important;
+        font-weight: 700 !important;
         letter-spacing: -.5px;
-        line-height: 1.15em;
-    }    
-
-    h2.h1 {
-        font-weight: 500 !important;
-    }
-
-    .h2 {
-        color: #000;
-        font-size: 1.5rem;
-        font-weight: 600 !important;
-        line-height: 1.25em;
     }
 
     h2.h2,
@@ -65,17 +41,11 @@ body  {
     .orcid,
     li.num,
     li.bullet  {
-        font-family: 'Work Sans', sans-serif;
-    }
-
-    .h2au1 {
-        color: #000;
-        margin-top: 0 !important;
-        font-size: 1rem !important;
+        font-family:  'Roboto Slab', serif;
     }
 
     .titleabstract {
-        font-weight: 600;
+        font-weight: 700;
     }
 
     .tit-fig,
@@ -83,8 +53,12 @@ body  {
     .tabtext,
     .source,
     .tabtextc {
-        font-family: 'Work Sans', sans-serif;
+        font-family: "Roboto", serif;
         font-style: normal;
+    }
+
+    p {
+        font-size: 1.25rem !important;
     }
 
     li.bullet,
@@ -139,7 +113,6 @@ body  {
         font-size: 1.6rem;
         line-height: 1.2;
         margin: 2rem 0 1rem 0;
-        padding-left: 1rem;
     }
 
     .h4,
@@ -171,7 +144,7 @@ body  {
         top: .5rem;
         width: .8rem;
         height: .8rem;
-        background: #0e3692;
+        background: #2d80af;
     }
 
     p {
@@ -219,7 +192,6 @@ body  {
         margin: 0 0 1rem 0;
         font-style: italic;
         font-weight: 400;
-        font-size: .85rem;
         color: black;
     }
 
@@ -264,7 +236,7 @@ body  {
         position: absolute;
         width: 7px;
         height: 7px;
-        background: #0e3692;
+        background: #2d80af;
         left: 0;
         top: .7rem;
     }
@@ -282,10 +254,6 @@ body  {
 
     /* notas a pe de páxina */
 
-    .footnote {
-        text-indent: 0 !important;
-    }
-
     p.footnote {
         margin-left: 1.8rem
     }
@@ -297,8 +265,8 @@ body  {
         position: relative;
         font-size: .8rem;
         border-radius: 10%;
-        background: white;
-        color: #0e3692;
+        background: #f6f6f6;
+        color: #2d80af;
         margin-right: .4rem;
         margin-left: -1.8rem;
     }

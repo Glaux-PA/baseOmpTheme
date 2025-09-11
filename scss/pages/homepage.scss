@@ -1,0 +1,67 @@
+.page_homepage {
+	.container.is-widther {
+		max-width: 1460px;
+	}
+
+	.highlighted-item-wrapper {
+		.btn_wrapper {
+			margin-top: $spacer * 2;
+		}
+	}
+
+	.categories_wrapper {
+		margin-top: $spacer * 4;
+		margin-bottom: $spacer * 6;
+	}
+
+	.monographs_list_wrapper {
+		margin-top: $spacer * 4;
+		background: none;
+
+		.monographs_list_title {
+			font-family: $font-family-serif;
+			font-weight: $font-weight-light;
+			font-size: $h2-font-size;
+			text-align: center;
+			color: $black;
+
+			@include media-breakpoint-up(sm) {
+				font-size: $h1-font-size;
+			}
+		}
+
+		.monographs_list {
+			margin-top: $spacer * 2;
+		}
+	}
+
+	.new_releases_wrapper {
+		background: $gray-bg-light;
+		padding-top: $spacer * 3;
+		padding-bottom: $spacer * 6;
+	}
+
+	.institutional-banners-list {
+
+		.banner-item {
+			display: block;
+			border: 1px solid;
+			text-align: center;
+			margin-bottom: $spacer * 2;
+
+			@include media-breakpoint-up(sm) {
+				margin-bottom: 0;
+			}
+
+			&:hover,
+			&:focus,
+			&:active {
+				background: $gray-bg-light;
+			}
+
+			img {
+				max-width: 300px;
+			}
+		}
+	}
+}

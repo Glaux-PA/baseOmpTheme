@@ -1,75 +1,69 @@
 .page {
-   padding-bottom: $spacer * 4;
+    padding-bottom: $spacer * 4;
+
+    .title_page {
+        font-family: $font-family-serif;
+        font-weight: $font-weight-light; 
+    }
+
+    .intro_text {
+        font-size: $font-size-lg;
+        font-weight: $font-weight-light;
+        font-family: $font-family-serif;
+        margin-bottom: $spacer * 4;
+    }
+
+    .title_text_block {
+        font-size: $h3-font-size;
+        font-weight: $font-weight-light;
+        font-family: $font-family-serif;
+        margin-bottom: $spacer;
+        margin-top: $spacer * 2;
+        color: $primary;
+    }
+
+    .cmp_form {
+        margin-top: $spacer * 2;
+        margin-bottom: $spacer * 4;
+
+        fieldset {
+            legend {
+                font-family: $font-family-serif;
+                color: $primary;
+                margin-top: $spacer;
+            }
+        }
+    }
+
+    .editorial-team-wrapper {
+        margin-top: $spacer * 4;
+
+        .row > div {
+            margin-bottom: $spacer * 1.5;
+        }
+
+        .title {
+            text-align: center;
+            font-size: $h2-font-size;
+            font-family: $font-family-serif;
+            margin-bottom: $spacer * 2;
+            font-weight: $font-weight-light;
+        }
+    }
+
+
+    .has_border {
+        padding: $spacer;
+        border: 1px solid $primary;
+        margin-top: $spacer * 3;
+    }
 }
 
-.page_index_journal {
-   padding-bottom: 0;
+.page_homepage {
+    padding-bottom: 0 !important;
 }
 
 
-.page_menu_item {
-   .page_title {
-      margin-top: $spacer * 2;
-      margin-bottom: $spacer * 2;
-   }
+.page_book {
+    
 }
-
-.page_submissions {
-   .page_title  {
-      margin-top: $spacer * 2;
-      margin-bottom: $spacer * 2;
-   }
-
-   .title_text_block_G {
-      font-size: $font-size-lg;
-      font-weight: $font-weight-semibold;
-      margin-bottom: $spacer * 2;
-      margin-top: $spacer * 3;
-      font-family: $font-family-sans-serif;
-   }
-}
-
-.page_information {
-   .page_title  {
-      margin-top: $spacer * 2;
-      margin-bottom: $spacer * 2;
-   }
-
-   .title-text-block {
-      font-size: $font-size-lg;
-      font-weight: $font-weight-semibold;
-      margin-bottom: $spacer * 2;
-      margin-top: $spacer * 3;
-      font-family: $font-family-sans-serif;
-   }
-}
-
-.page_editorial_team {
-   .page_title  {
-      margin-top: $spacer * 2;
-      margin-bottom: $spacer * 2;
-   }
-
-   .title-text-block {
-      font-size: $font-size-lg;
-      font-weight: $font-weight-semibold;
-      margin-bottom: $spacer * 2;
-      margin-top: $spacer * 3;
-      font-family: $font-family-sans-serif;
-   }
-}
-
-.page_about {
-   .page_title  {
-         margin-top: $spacer * 2;
-         margin-bottom: $spacer * 2;
-   }
-}
-
-.page_contact {
-   .page_title  {
-         margin-top: $spacer * 2;
-         margin-bottom: $spacer * 2;
-   }
-}
-
