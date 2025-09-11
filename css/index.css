@@ -3697,8 +3697,6 @@ a:hover, a:focus, a:active {
 .pkp_structure_footer_wrapper {
   padding-top: 4rem;
   padding-bottom: 2rem;
-  background: #303030;
-  color: #fff;
   font-family: "Work Sans", sans-serif;
 }
 .pkp_structure_footer_wrapper .navigation_footer_wrapper {
