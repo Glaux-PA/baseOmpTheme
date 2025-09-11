@@ -1,7 +1,7 @@
 // Color system
 
 $white:    #fff;
-$gray-100: #f5f7fb;
+$gray-100: #f8f9fa;
 $gray-200: #e9ecef;
 $gray-300: #dee2e6;
 $gray-400: #ced4da;
@@ -10,21 +10,26 @@ $gray-600: #6c757d;
 $gray-700: #495057;
 $gray-800: #343a40;
 $gray-900: #212529;
-$black:    #000;
+$black:    #212529;
 
-$primary:       #59b893;
-$primary-light: #0e3692;
-$primary-dark:  #101921;
-$secondary:     #f59701;
-$gray-bg: #f5f7fb;
-$gray-bg-dark: #121b23;
-$border-color: #e7ebf4;
+$primary:       #90c715;
+$primary-light: #eaebe3;
+$primary-dark:  #3f5c2b;
+$secondary:     #3f5c2b;
+$gray-bg: #eaebe3;
+$gray-dark: #303030;
+$gray-text: #565c5c;
+$gray-bg-light: #f7f8ed;
 
+
+$body-color: #565c5c;
 
 
 // Typography
-$font-family-sans-serif:      'Work Sans', sans-serif;
+$font-family-serif:           'Roboto Slab', serif;
+$font-family-sans-serif:      "Roboto", serif;
 $font-family-base:            $font-family-sans-serif;
+
 
 
 $font-size-root:              null;
@@ -33,10 +38,6 @@ $font-size-sm:                $font-size-base * .875; // 14px
 $font-size-sm-alt:            $font-size-base * 0.9375; //15px
 $font-size-lg:                $font-size-base * 1.25;
 $font-size-md:                $font-size-base * 1.125;
-$font-size-lg-extra:          $font-size-base * 2;
-
-
-$font-size-extra:    $font-size-base * 3;
 
 $font-weight-lighter:         lighter;
 $font-weight-light:           300;
@@ -54,7 +55,7 @@ $line-height-sm:              1.25;
 $line-height-lg:              2;
 
 $h1-font-size:                $font-size-base * 2.5;
-$h2-font-size:                $font-size-base * 2;
+$h2-font-size:                $font-size-base * 2.25;
 $h3-font-size:                $font-size-base * 1.75;
 $h4-font-size:                $font-size-base * 1.5;
 $h5-font-size:                $font-size-base * 1.25;
@@ -106,8 +107,7 @@ $grid-breakpoints: (
 
 $input-color:                      $black;
 $input-border-color:            $gray-600;
-$input-border-radius:                   0;
+$input-border-radius:                   5px;
+$border-color:                    #e2e2e0;
 
 
-
-$border-radius: 15px;

@@ -37,18 +37,9 @@
 @import "components/html_iframe_aside";
 
 // Objects
-@import "objects/titles";
 @import "objects/social_list";
-@import "objects/articles_list";
-@import "objects/article_summary";
-@import "objects/issue_toc";
-@import "objects/galleys";
-@import "objects/sections";
 @import "objects/breadcrumbs";
 @import "objects/form";
-@import "objects/article_details";
-@import "objects/submissions_banner";
-@import "objects/issue_summary";
 @import "objects/announcement_summary";
 @import "objects/announcement_full";
 @import "objects/search_results";
@@ -59,27 +50,36 @@
 @import "objects/modal_window";
 @import "objects/share_block";
 @import "objects/scrolltop";
-@import "objects/header_view";
-@import "objects/statistics_list_mini";
-@import "objects/hero";
+@import "objects/highlighted_item";
 @import "objects/metrics";
-@import "objects/info_issue_wrapper";
-@import "objects/subsection_menu";
-@import "objects/issues_archive_wrapper";
+@import "objects/categories";
+@import "objects/banner";
+@import "objects/team_member";
+@import "objects/monograph_summary";
+@import "objects/monograph_full";
+@import "objects/chapter_summary";
+@import "objects/files";
+@import "objects/chapter";
+@import "objects/monographs_list";
+@import "objects/notification";
+@import "objects/language_switcher";
+@import "objects/citation";
+
 
 
 // Pages
 
-@import "pages/index_journal";
+@import "pages/homepage";
 @import "pages/login";
 @import "pages/register";
 @import "pages/register_complete";
-@import "pages/article";
-@import "pages/issue";
-@import "pages/issue_archive";
+@import "pages/menu_item";
 @import "pages/search";
+@import "pages/submissions";
 @import "pages/contact";
 @import "pages/display";
 @import "pages/page";
-@import "pages/authorList";
-@import "pages/author";
+@import "pages/privacy";
+@import "pages/about";
+
+@import "pages/catalog";

@@ -1,4 +1,15 @@
 .cmp_announcements {
+	.announcements_list_title {
+		font-weight: $font-weight-light;
+		font-size: $h2-font-size;
+		line-height: $line-height-xs;
+		font-family: $font-family-serif;
+		margin-bottom: $spacer * 2;
+		text-align: center;
+	}
+}
+
+.cmp_announcements_list {
 	@include list-unstyled();
 }
 
