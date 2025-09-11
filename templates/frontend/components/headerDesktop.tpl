@@ -50,7 +50,7 @@
 
 					{* revisar --este código es provisional-- *}
 					<a href="{$homeUrl}" class="is_img">
-						<img src="{$baseUrl}/plugins/themes/baseOjsTheme/img/logo-omp.svg" alt="Logo">
+						<img src="{$baseUrl}/plugins/themes/baseOmpTheme/img/logo-omp.svg" alt="Logo">
 		            </a>
 
 		            {* revisar este código para cargar bien el logo
