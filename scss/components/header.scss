@@ -1,60 +1,8 @@
-.header_top_G {
-	border-bottom: 1px solid $primary_dark;
-	padding-top: $spacer;
-	padding-bottom: $spacer;
-	margin-bottom: $spacer;
-	
-	.logo_extra_wrapper_G {
-		.logo_ucv {
-			width: 220px;
-		}
-	}
-}
-
 .pkp_structure_head {
-	font-family: $font-family-serif;
-
-	.head_innerwrapper_G {
+	.head-innerwrapper {
 		display: flex;
 		align-items: center;
-	}
-
-	.pkp_navigation_search_wrapper {
-		margin-right: $spacer / 2;
-
-		.pkp_search {
-			width: 100%;
-			position: relative;
-
-			.form-control {
-				border: 1px solid $gray-bg;
-				background: $gray-bg;
-				padding-left: 2.25rem;
-				width: 100%;
-
-				@include media-breakpoint-up(md) {
-					width: 250px;
-				}
-			}
-
-			.bi-search {
-				font-size: $h6-font-size;
-				position: absolute;
-				top: 6px;
-				left: 12px;
- 			}
-		}
-	}
-
-	.pkp_site_name_wrapper {
-		.pkp_site_name {
-			display: inline-block;
-			text-align: center;
-
-			.logo {
-				width: 250px;
-			}
-		}
+		justify-content: end;
 	}
 
 	&.is-desktop {
@@ -68,6 +16,15 @@
 			}
 		}
 
+		.site-name-wrapper {
+			.pkp_site_name_wrapper {
+				.logo {
+					width: 180px;
+				}
+			}
+		}
+		
+
 		.pkp_navigation_primary,
 		.pkp_navigation_submission {
 			@include list-unstyled();
@@ -79,7 +36,8 @@
 				margin-right: $spacer;
 				position: relative;
 				cursor: pointer;
-				font-size: $font-size-md;
+				font-size: $font-size-lg;
+				text-transform: uppercase;
 
 				&:hover,
 				&:focus,
@@ -101,31 +59,55 @@
 				.submenu {
 					@include list-unstyled();
 					position: absolute;
+					background: $white;
 					padding: $spacer;
 					top: 35px;
 					left: -$spacer;
 					min-width: 180px;
-					background: $white;
-					border: 1px solid $input-border-color;
-					z-index: 1000;
+					border: 1px solid $border-color;
 
 					> li {
 						font-size: $font-size-sm-alt;
 						line-height: $line-height-sm;
 						margin-right: 0;
 						margin-bottom: $spacer / 3;
+						text-transform: none;
+					}
+				}
+			}
+		}
+
+		.pkp_navigation_submission {
+			li {
+				a {
+					padding: $spacer / 4 $spacer;
+					border-radius: 5px;
+					border: 1px solid $border-color;
+					color: $white;
+					font-size: $font-size-base;
+					background: $gray-bg-dark;
+
+					&:hover,
+					&:focus,
+					&:active {
+						color: $secondary;
+						background: $primary;
+						border: 1px solid $border-color;
 					}
 				}
 			}
 		}
 	}
 
-	.menu_group_wrapper_G {
+	.menu-group-wrapper {
 		display: flex;
 		justify-content: end;
 		padding-top: $spacer;
 		padding-bottom: $spacer;
-		align-items: center;
+	}
+
+	.pkp_navigation_search_wrapper {
+		margin-right: $spacer;
 	}
 
 	.pkp_navigation_user_wrapper {
@@ -147,19 +129,22 @@
 					.submenu {
 						position: absolute;
 						@include list-unstyled();
-						top: 40px;
+						border: 1px solid $border-color;
+						top: 30px;
 						padding: $spacer/2;
 						width: 140px;
   						left: 0;
   						z-index: 1000;
-  						background: $primary_dark;
+  						background: $white;
 
 						a {
 							text-decoration: none;
+							color: $black;
+							
 							&:hover,
 							&:focus,
 							&:active {
-								color: $white;
+								color: $primary;
 							}
 						}
 					}
@@ -177,33 +162,32 @@
 					padding: $spacer/4 $spacer/2;
 					text-transform: uppercase;
 
+
 					a {
-						text-decoration: none;
-
-						&:hover,
-						&:focus,
-						&:active {
-						}
-					}
-				}
-
-				&.profile {
-					text-decoration: none;
-					padding: .5rem $spacer;
-					font-size: $font-size-sm-alt;
-					cursor: pointer;
-					border: 1px solid $primary_dark;
-					background: $primary_dark;
-					color: $primary;
-
-					> a {
+						color: $black;
 						text-decoration: none;
 
 						&:hover,
 						&:focus,
 						&:active {
 							color: $primary;
-							background: $primary_dark;
+						}
+					}
+				}
+
+				&.profile {
+					padding: $spacer/4 $spacer;
+					font-size: $font-size-sm-alt;
+					cursor: pointer;
+
+					a {
+						color: $black;
+						text-decoration: none;
+						
+						&:hover,
+						&:focus,
+						&:active {
+							color: $primary;
 						}
 					}
 				}
@@ -234,12 +218,10 @@
 			display: none;
 		}
 
-		.site_name_wrapper_G {
+		.pkp_site_name_wrapper {
 			.pkp_site_name {
-				text-align: left;
-
 				.logo {
-					width: 200px;
+					width: 220px;
 				}
 			}
 		}
@@ -247,6 +229,7 @@
 		.pkp_head_wrapper {
 			.btn-menu {
 				font-size: 3rem;
+				color: $primary;
 				text-decoration: none;
 				text-align: right;
   				display: block;
@@ -265,7 +248,7 @@
 		position: relative;
 		
 		&.overlay-menu-wrapper {
-			background-color: $white;
+			background-color: $primary;
 			position: fixed;
 			top: 0;
 			left: 0;
@@ -280,13 +263,66 @@
 
 			.pkp_navigation_user_wrapper {
 				margin-top: $spacer * 2;
-				margin-bottom: $spacer;
-				justify-content: center;
-				align-items: center;
+
+				.menuitem_lang {
+					color: $white;
+					a {
+						color: $white;
+						text-decoration: none;
+
+						&:hover,
+						&:focus,
+						&:active {
+							color: $white;
+						}
+					}
+				}
+
+				.profile {
+					color: $white;
+
+					a {
+						color: $white;
+						text-decoration: none;
+						
+						&:hover,
+						&:focus,
+						&:active {
+							color: $white;
+						}
+					}
+				}
+			}
+
+			.pkp_navigation_search_wrapper {
+				margin-top: $spacer;
+				margin-right: 0;
+
+				.pkp_search {
+					width: 100%;
+					position: relative;
+
+					.form-control {
+						border: 1px solid $white;
+						background: $primary;
+					}
+
+					.bi-search {
+						font-size: $h5-font-size;
+						position: absolute;
+						top: .15rem;
+						right: $spacer / 2;
+						color: $white;
+		 			}
+				}
+			}
+
+			.btn-menu {
+				color: $white;
 			}
 
 			.pkp_site_nav_menu {
-				background: $white;
+				background: $primary;
 				padding: 0;
 
 				.pkp_navigation_primary_row {
@@ -299,20 +335,19 @@
 						margin-bottom: 0;
 
 						li {
+							color: $white;
 							font-size: $font-size-lg;
 							display: block;
 							cursor: pointer;
-							color: $black;
-							margin-bottom: $spacer / 2;
 
 							a {
 								text-decoration: none;
-								color: $black;
+								color: $white;
 
 								&:hover,
 								&:focus,
 								&:active {
-									color: $primary;
+									opacity: .5;
 								}
 							}
 
@@ -320,6 +355,7 @@
 								@include list-unstyled();
 								margin-top: $spacer;
 								margin-bottom: $spacer;
+
 
 								> li {
 									font-size: $font-size-base;
@@ -333,14 +369,4 @@
 			}
 		}
 	}
-}
-
-
-
-// Estilos para caret en menú
-li {
-  .bi.bi-caret-down-fill {
-    font-size: .75rem;
-    margin-right: .25rem;
-  }
 }

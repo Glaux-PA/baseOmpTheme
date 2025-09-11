@@ -6,7 +6,7 @@
 		line-height: $line-height-sm;
 		font-weight: $font-weight-normal;
 		margin-top: $spacer / 2;
-		font-family: $font-family-serif;
+		font-family: $font-family-sans-serif;
 
 		@include media-breakpoint-up(sm) {
 			font-size: $h5-font-size;
