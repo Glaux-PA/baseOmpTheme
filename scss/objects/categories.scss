@@ -1,0 +1,51 @@
+.categories_wrapper {	
+	.title_categories {
+		font-weight: $font-weight-light;
+		text-align: center;
+		font-size: $h1-font-size;
+		color: $gray-text;
+		font-family: $font-family-serif;
+		color: $black;
+	}
+
+	.categories_list {
+		margin-top: $spacer * 2;
+		justify-content: center;
+
+		div {
+			margin-bottom: $spacer * 2;
+
+			@include media-breakpoint-up(sm) {
+				margin-bottom: 0;
+			}
+
+			a {
+				color: $primary-dark;
+				font-family: $font-family-serif;
+				text-decoration: none;
+				text-align: center;
+				display: block;
+
+				.bi-plus {
+					margin-top: $spacer;
+					background: $primary;
+					color: $white;
+					padding: $spacer / 3 $spacer / 2;
+				}
+
+				&:hover,
+				&:focus,
+				&:active {
+					p {
+						color: $primary;
+					}
+
+					.bi-plus {
+						color: $primary-dark;
+						background: $primary;
+					}
+				}
+			}
+		}
+	}
+}

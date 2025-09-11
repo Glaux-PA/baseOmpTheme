@@ -1,0 +1,10 @@
+.language_switcher_wrapper {
+	margin-left: $spacer;
+	a {
+		display: inline-block;
+
+		img {
+			width: 30px;
+		}
+	}
+}

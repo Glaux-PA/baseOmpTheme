@@ -1,0 +1,44 @@
+.citation {
+	.label {
+		font-weight: $font-weight-medium;
+		margin-bottom: $spacer / 2;
+	}
+
+	.citation_display {
+		.citation_formats {
+			margin-top: $spacer * 2;
+
+			.citation_formats_button {
+				background: $white;
+				border: 1px solid $black;
+				padding: $spacer / 2  $spacer;
+				text-align: left;
+				position: relative;
+				width: 300px;
+
+				.bi {
+					padding-left: $spacer * 2;
+					position: absolute;
+					right: $spacer;
+				}
+			}
+
+			.citation_formats_list {
+				padding: $spacer;
+				border: 1px solid;
+  				width: 300px;
+ 				margin-top: -1px;
+
+				.citation_formats_styles {
+					@include list-unstyled();
+
+					li {
+						a {
+							color: $black;
+						}
+					}
+				}
+			}
+		}
+	}
+}

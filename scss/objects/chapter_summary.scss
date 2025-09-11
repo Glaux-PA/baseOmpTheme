@@ -1,0 +1,37 @@
+.chapter_summary {
+	padding: $spacer * 1.5;
+	border: 1px solid $border-color;
+	margin-bottom: $spacer;
+
+	.link_title {
+		color: $black;
+
+		&:hover,
+		&:focus,
+		&:active {
+			color: $primary;
+			text-decoration: none;
+		}
+	}
+
+	.authors,
+	.monograph {
+		font-size: $font-size-sm;
+
+		.sub_item {
+			.label {
+				font-weight: normal;
+				font-size: $font-size-sm;
+				color: $body-color;
+			}
+		}
+	}
+
+	.title {
+		font-size: $font-size-base;
+		line-height: $line-height-base;
+		font-family: $font-family-serif;
+		color: $black;
+		margin-bottom: $spacer;
+	}
+}

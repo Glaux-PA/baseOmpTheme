@@ -1,0 +1,23 @@
+.team-member-summary {
+	padding: $spacer * 2;
+	border: 1px solid $border-color;
+	height: 200px;
+	text-align: center;
+
+	.name {
+		font-size: $font-size-md;
+		font-family: $font-family-serif;
+		font-weight: $font-weight-normal;
+	}
+
+	.link {
+		color: $primary;
+		text-decoration: none;
+
+		&:hover,
+		&:focus,
+		&:active {
+			text-decoration: underline;
+		}
+	}
+}

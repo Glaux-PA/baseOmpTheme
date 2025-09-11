@@ -1,0 +1,38 @@
+.banner-item {
+	.title-wrapper {
+		background: $primary;
+		padding: $spacer * 2;
+		position: relative;
+
+		.title {
+			font-size: $font-size-md;
+			font-weight: $font-weight-normal;
+			color: $white;
+			text-decoration: none;
+			font-family: $font-family-serif;
+		}
+
+		.bi-plus {
+			background: $primary-dark;
+			padding: $spacer / 2;
+			position: absolute;
+			right: 0;
+			bottom: 0;
+		}
+	}
+
+	
+	&:hover,
+	&:focus,
+	&:active {
+		.title-wrapper {
+			background: $primary-dark;
+			color: $white;
+		}
+
+		.bi-plus {
+			color: $primary-dark;
+			background: $primary;
+		}
+	}
+}

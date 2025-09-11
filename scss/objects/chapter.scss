@@ -1,0 +1,145 @@
+.obj_chapter {
+	margin-top: $spacer * 3;
+
+	.title {
+		font-size: $h2-font-size;
+		line-height: $line-height-sm;
+		font-weight: $font-weight-light;
+		font-family: $font-family-serif;
+		margin-bottom: $spacer;
+
+		@include media-breakpoint-up(md) {
+			font-size: $h1-font-size;
+			line-height: $line-height-xs;
+		}
+	}
+	.subtitle {
+		font-family: $font-family-sans-serif;
+		margin-bottom: $spacer * 3;
+		font-size: $h5-font-size;
+	}
+
+	.item {
+		margin-top: $spacer;
+
+		.label {
+			font-size: $font-size-base;
+			font-weight: $font-weight-normal;
+			margin-bottom: 0;
+			color: $black;
+		}
+
+		.value {
+
+		}
+
+		.sub_item {
+			margin-top: $spacer;
+			margin-bottom: $spacer;
+
+			.label {
+				font-weight: $font-weight-medium;
+				font-size: $font-size-base;
+				margin-bottom: 0;
+				color: $black;
+			} 
+		}
+	}
+
+	.doi, 
+	.published,
+	.authors {
+		margin-top: 0;
+		padding-bottom: 0;
+		
+		.label {
+			font-family: $font-family-sans-serif;
+			font-size: $font-size-base;
+			display: inline-block;
+			font-weight: $font-weight-medium;
+		}
+	}
+
+	.doi {
+		margin-left: $spacer / 2;
+	}
+
+	.authors {
+		.sub_item {
+			margin: 0;
+			margin-top: $spacer / 2;
+		}
+	}
+
+	.supporting_agency,
+	.categories {
+		ul {
+			@include list-unstyled();
+		}
+	}
+
+	.copyright,
+	.license {
+		font-size: $font-size-sm;
+
+		img {
+			margin-top: $spacer / 2;
+			margin-bottom: $spacer;
+		}
+	}
+
+	.license, 
+	.copyright {
+		.label {
+			font-weight: $font-weight-medium;
+			margin-bottom: $spacer / 2;
+		}
+	}
+
+	.item.cover_image {
+		margin-top: 0;
+	}
+
+	.item.downloads_chart {
+		.label {
+			margin-bottom: $spacer * 3;
+		}
+
+		&:before {
+			content: '';
+			width: $spacer * 10;
+			background: $primary;
+			display: block;
+			margin-bottom: $spacer * 2;
+			padding: .05rem;
+		}
+	}
+
+	.item.references {
+		height: 400px;
+		overflow: scroll;
+	}
+
+	.chapters_list {
+		margin-top: $spacer * 3;
+		margin-top: $spacer * 3;
+		
+		.chapters_list_title {
+			font-weight: $font-weight-light;
+			font-size: $h2-font-size;
+			line-height: $line-height-xs;
+			font-family: $font-family-serif;
+			margin-bottom: $spacer * 2;
+		}
+
+		.chapter_summary {
+			.files {
+				margin-top: $spacer * 2;
+			}
+		}
+	}
+
+	.entry_license {
+		margin-top: $spacer * 2;
+	}
+}

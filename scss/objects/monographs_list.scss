@@ -1,0 +1,40 @@
+.monographs_list_wrapper {
+	margin-top: $spacer;
+	padding-top: $spacer * 3;
+	padding-bottom: $spacer * 3;
+	background: $gray-bg-light;
+	
+	.monographs_list_title {
+		font-weight: $font-weight-light;
+		font-size: $h2-font-size;
+		line-height: $line-height-xs;
+		font-family: $font-family-serif;
+		margin-bottom: $spacer * 2;
+		text-align: center;	
+	}
+
+	.btn_wrapper {
+		text-align: center;
+		margin-top: $spacer * 3;
+	}
+}
+
+
+.monograph_grid {
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	grid-column-gap: var(--grid-column-gap,30px);
+	grid-row-gap: var(--grid-row-gap,20px);
+
+	@include media-breakpoint-up(sm) {
+		grid-template-columns: repeat(3,1fr);
+	}	
+
+	@include media-breakpoint-up(md) {
+		grid-template-columns: repeat(4,1fr);
+	}	
+
+	@include media-breakpoint-up(lg) {
+		grid-template-columns: repeat(5,1fr);
+	}
+}

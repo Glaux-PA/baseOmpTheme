@@ -1,0 +1,42 @@
+.obj_monograph_summary {
+	margin-bottom: $spacer;
+	
+	.title {
+		font-size: $font-size-md;
+		line-height: $line-height-sm;
+		font-weight: $font-weight-normal;
+		margin-top: $spacer / 2;
+		font-family: $font-family-serif;
+
+		@include media-breakpoint-up(sm) {
+			font-size: $h5-font-size;
+		}
+
+		a {
+			text-decoration: none;
+			color: $primary;
+
+			&:hover,
+			&:focus,
+			&:active {
+				color: $primary-dark;
+			}
+		}
+	}
+
+	.author {
+		margin-top: $spacer / 2;
+		margin-bottom: $spacer / 2;
+		font-size: $font-size-sm;
+	}
+
+	.metrics-wrapper {
+		margin-top: $spacer / 2;
+		padding-top: $spacer / 2;
+		border-top: 1px solid $border-color;
+
+		.metrics-downloads {
+			font-size: $font-size-sm;
+		}
+	}
+}

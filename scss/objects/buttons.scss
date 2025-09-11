@@ -1,15 +1,25 @@
 .btn {
 	display: inline-block;
 	background-color: $primary;
-	border: 1px solid $primary;
-	border-radius: 6px;
 	color: $white;
-	padding: $spacer / 2 $spacer * 2;
+	padding: $spacer / 2 $spacer * 4;
 	text-decoration: none;
-	font-weight: $font-weight-medium;
+	font-weight: $font-weight-semibold;
+	border: 1px solid $primary;
 	text-align: center;
 	cursor: pointer;
-	font-size: $font-size-base;
+	font-size: $font-size-md;
+	position: relative;
+	font-family: $font-family-serif;
+
+	.bi-plus {
+		background: $primary-dark;
+		border: 1px solid $primary-dark;
+		color: $white;
+		position: absolute;
+		right: 0;
+		bottom: 0;
+	}
 
 	&:hover,
 	&:focus,
@@ -17,8 +27,20 @@
 		background: $primary-dark;
 		border: 1px solid $primary-dark;
 		color: $white;
+
+		.bi-plus {
+			color: $primary-dark;
+			background: $primary;
+			border: 1px solid $primary;
+		}
 	}
 }
+
+.btn-sm {
+	padding: $spacer / 4 $spacer;
+	font-size: $font-size-base;
+}
+
 
 .btn-link {
 	display: inline-block;
@@ -32,29 +54,4 @@
 	&:active {
 		color: $primary-dark;
 	}
-}
-
-.btn-alt,
-.block_make_submission_link,
-.read_more {
-	background-color: $white;
-	padding: $spacer / 2 $spacer * 2;
-	border: 1px solid $primary;
-	color: $primary;
-	text-decoration: none;
-	border-radius: 6px;
-
-	&:hover,
-	&:focus,
-	&:active {
-		background: $primary;
-		border: 1px solid $primary;
-		color: $white;
-	}
-}
-
-
-.btn_wrapper {
-	margin-top: $spacer;
-	margin-bottom: $spacer;
 }
