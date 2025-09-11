@@ -14,15 +14,6 @@
 			<div class="row head-innerwrapper">
 				<div class="col-10">
 					<div class="pkp_site_name_wrapper">
-						{if !$requestedPage || $requestedPage === 'index'}
-						<h1 class="pkp_screen_reader">
-							{if $currentContext}
-								{$displayPageHeaderTitle|escape}
-							{else}
-								{$siteTitle|escape}
-							{/if}
-						</h1>
-						{/if}
 						<div class="pkp_site_name">
 							{capture assign="homeUrl"}
 								{url page="index" router=\PKP\core\PKPApplication::ROUTE_PAGE}
