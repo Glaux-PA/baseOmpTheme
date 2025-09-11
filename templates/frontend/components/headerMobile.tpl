@@ -35,7 +35,7 @@
 		            		</a>
 		            		
 
-		            		{* revisar este código para cargar bien el logo *}
+		            		{* revisar este código para cargar bien el logo
 							{if $displayPageHeaderLogo}
 								<a href="{$homeUrl}" class="is_img">
 									<img src="{$publicFilesDir}/{$displayPageHeaderLogo.uploadName|escape:"url"}" width="{$displayPageHeaderLogo.width|escape}" height="{$displayPageHeaderLogo.height|escape}" {if $displayPageHeaderLogo.altText != ''}alt="{$displayPageHeaderLogo.altText|escape}"{/if} />
@@ -47,7 +47,7 @@
 									<img src="{$baseUrl}/templates/images/structure/logo.png" alt="{$applicationName|escape}" title="{$applicationName|escape}" width="180" height="90" />
 								</a>
 							{/if}
-							
+							*}
 						</div>
 					</div>
 				</div>
@@ -65,16 +65,14 @@
                     <div class="col-10 site-name-wrapper">
 						<div class="pkp_site_name">
 
-							{capture assign="homeUrl"}
-								{url page="index" router=\PKP\core\PKPApplication::ROUTE_PAGE}
-							{/capture}
+
 							
 							{* revisar --este código es provisional-- *}
 							<a href="{$homeUrl}" class="is_img">
 								<img src="{$baseUrl}/plugins/themes/baseOjsTheme/img/logo.svg" alt="Logo">
 		            		</a>
 
-							{* revisar este código para cargar bien el logo *}
+							{* revisar este código para cargar bien el logo
 							{if $displayPageHeaderLogo}
 								<a href="{$homeUrl}" class="is_img">
 									<img src="{$publicFilesDir}/{$displayPageHeaderLogo.uploadName|escape:"url"}" width="{$displayPageHeaderLogo.width|escape}" height="{$displayPageHeaderLogo.height|escape}" {if $displayPageHeaderLogo.altText != ''}alt="{$displayPageHeaderLogo.altText|escape}"{/if} />
@@ -86,7 +84,7 @@
 									<img src="{$baseUrl}/templates/images/structure/logo.png" alt="{$applicationName|escape}" title="{$applicationName|escape}" width="180" height="90" />
 								</a>
 							{/if}
-							
+							*}
 						</div>
                     </div>
 
