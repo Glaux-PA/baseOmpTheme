@@ -65,7 +65,9 @@
                     <div class="col-10 site-name-wrapper">
 						<div class="pkp_site_name">
 
-
+							{capture assign="homeUrl"}
+								{url page="index" router=\PKP\core\PKPApplication::ROUTE_PAGE}
+							{/capture}
 							
 							{* revisar --este código es provisional-- *}
 							<a href="{$homeUrl}" class="is_img">
@@ -105,7 +107,7 @@
                         {* Search form *}
                         <div class="pkp_navigation_search_wrapper">
                             <div id="search"><a name="search-form"></a>
-                               {include file="frontend/components/searchForm_simple_index.tpl"}
+                               {include file="frontend/components/searchForm_simple.tpl"}
                             </div>
                         </div>
 
