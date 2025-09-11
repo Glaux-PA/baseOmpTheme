@@ -1,6 +1,6 @@
 // métricas 
 
-.block_metrics_G {
+.block_metrics {
 	.content {
 	    display: grid;
 	    grid-template-columns: 1fr 1fr;
@@ -11,7 +11,7 @@
 	    div {
 		    padding: $spacer;
 		    text-align: center;
-		    border: 1px solid $black;
+		    background: $gray-bg-light;
 		    font-size: $h4-font-size;
 
 		    &.metrics_total {

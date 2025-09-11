@@ -1,6 +1,8 @@
 .obj_announcement_full {
-	.page_title  {
+
+	.title_page {
 		margin-top: $spacer * 3;
+		font-weight: $font-weight-light;
 	}
 
 	.date {

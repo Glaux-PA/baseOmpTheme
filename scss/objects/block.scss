@@ -1,14 +1,11 @@
 .pkp_block {
-	margin-top: 2rem;
-	margin-bottom: 2rem;
 	.title {
 		font-size: $font-size-lg;
 		margin-top: $spacer * 2;
-		font-weight: $font-weight-semibold;
+		font-weight: $font-weight-bold;
 	}
 
 	ul {
 		@include list-unstyled();
-		
 	}
 }

@@ -11,7 +11,7 @@
     padding: 0;
 
     #scrolltop-bg {
-        fill: $primary;
+        fill: $primary-dark;
     }
 
     #scrolltop-arrow {
@@ -19,11 +19,11 @@
     }
 
     a:hover #scrolltop-bg {
-        fill: $primary;
+        fill: $primary-dark;
     }
 
     a:hover #scrolltop-arrow {
-        fill: $white;
+        fill: $primary-light;
     }
 
     a {
@@ -52,7 +52,7 @@
     a svg {
         display: block;
         border-radius: 50%;
-        border: 2px solid $primary;
+        border: 2px solid $primary-dark;
     }
 
     a #scrolltop-arrow {
