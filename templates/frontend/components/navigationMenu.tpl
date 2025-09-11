@@ -1,9 +1,9 @@
 {**
  * templates/frontend/components/navigationMenu.tpl
  *
- * Copyright (c) 2014-2021 Simon Fraser University
- * Copyright (c) 2003-2021 John Willinsky
- * Distributed under the GNU GPL v3. For full terms see the file docs/COPYING.
+ *
+ * Copyright (c) 2025 GLAUX Publicaciones Académicas.
+ *
  *
  * @brief Primary navigation menu list for the application
  *
@@ -20,11 +20,15 @@
 				{continue}
 			{/if}
 			<li class="{$liClass|escape}">
-				<a href="{$navigationMenuItemAssignment->navigationMenuItem->getUrl()}">
+				{if $navigationMenuItemAssignment->children}
+					<i class="bi bi-caret-down-fill"></i>{$navigationMenuItemAssignment->navigationMenuItem->getLocalizedTitle()}
+				{else}
+					<a href="{$navigationMenuItemAssignment->navigationMenuItem->getUrl()}">
 					{$navigationMenuItemAssignment->navigationMenuItem->getLocalizedTitle()}
 				</a>
+				{/if}
 				{if $navigationMenuItemAssignment->navigationMenuItem->getIsChildVisible()}
-					<ul>
+					<ul class="submenu hidden-element">
 						{foreach key=childField item=childNavigationMenuItemAssignment from=$navigationMenuItemAssignment->children}
 							{if $childNavigationMenuItemAssignment->navigationMenuItem->getIsDisplayed()}
 								<li class="{$liClass|escape}">
