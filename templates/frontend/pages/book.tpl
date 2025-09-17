@@ -21,13 +21,15 @@
 {include file="frontend/components/header.tpl" pageTitleTranslated=$pageTitle}
 
 <div class="page page_book">
-	{if $isChapterRequest}
-		{* Display chapter details *}
-		{include file="frontend/objects/chapter.tpl" monograph=$publishedSubmission}
-	{else}
-		{* Display book details *}
-		{include file="frontend/objects/monograph_full.tpl" monograph=$publishedSubmission}
-	{/if}
+	<div class="container">
+		{if $isChapterRequest}
+			{* Display chapter details *}
+			{include file="frontend/objects/chapter.tpl" monograph=$publishedSubmission}
+		{else}
+			{* Display book details *}
+			{include file="frontend/objects/monograph_full.tpl" monograph=$publishedSubmission}
+		{/if}
+	</div>
 
 	{call_hook name="Templates::Catalog::Book::Footer::PageFooter"}
 </div><!-- .page -->
