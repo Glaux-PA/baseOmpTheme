@@ -35,4 +35,6 @@
 		<div class="date">
 			{$monograph->getDatePublished()|date_format:$dateFormatLong}
 		</div>
+
+
 </div><!-- .obj_monograph_summary -->
