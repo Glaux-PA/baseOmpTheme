@@ -15,7 +15,7 @@
 		<a {if $press}href="{url press=$press->getPath() page="catalog" op="book" path=$monograph->getBestId()}"{else}href="{url page="catalog" op="book" path=$monograph->getBestId()}"{/if} class="cover">
 			{assign var="coverImage" value=$monograph->getCurrentPublication()->getLocalizedData('coverImage')}
 			<img
-				src="{$monograph->getCurrentPublication()->getLocalizedCoverImageThumbnailUrl($monograph->getData('contextId'))}"
+				src="{$monograph->getCurrentPublication()->getLocalizedCoverImageUrl($monograph->getData('contextId'))}"
 				alt="{$coverImage.altText|escape|default:''}"
 			>
 		</a>
