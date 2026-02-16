@@ -5,6 +5,8 @@
  * Copyright (c) 2003-2021 John Willinsky
  * Distributed under the GNU GPL v3. For full terms see the file docs/COPYING.
  *
+ * Tema desarrollado por GLAUX Publicaciones Académicas
+ *
  * @brief Display a list of monographs.
  *
  * @uses $monographs array List of monographs to display
@@ -25,37 +27,25 @@
 	{assign var="monographHeading" value="h5"}
 {/if}
 
-<div class="cmp_monographs_list">
-
+<div class="monographs_list_wrapper">
 	{* Optional title *}
 	{if $titleKey}
 		<{$heading} class="title">
 			{translate key=$titleKey}
 		</{$heading}>
 	{/if}
-
-	{assign var=counter value=1}
-	{foreach name="monographListLoop" from=$monographs item=monograph}
-		{if is_array($featured) && array_key_exists($monograph->getId(), $featured)}
-			{assign var="isFeatured" value=true}
-		{else}
-			{assign var="isFeatured" value=false}
-		{/if}
-		{if $isFeatured}
-			{include file="frontend/objects/monograph_summary.tpl" monograph=$monograph isFeatured=$isFeatured heading=$monographHeading authorUserGroups=$authorUserGroups}
-		{else}
-			{if $counter is odd by 1}
-				<div class="row">
+	
+	<div class="row">
+		{foreach name="monographListLoop" from=$monographs item=monograph}
+			{if is_array($featured) && array_key_exists($monograph->getId(), $featured)}
+				{assign var="isFeatured" value=true}
+			{else}
+				{assign var="isFeatured" value=false}
 			{/if}
-				{include file="frontend/objects/monograph_summary.tpl" monograph=$monograph isFeatured=$isFeatured heading=$monographHeading}
-			{if $counter is even by 1}
-				</div>
-			{/if}
-			{assign var=counter value=$counter+1}
-		{/if}
-	{/foreach}
-	{* Close .row if we have an odd number of titles *}
-	{if $counter > 1 && $counter is even by 1}
-		</div>
-	{/if}
+			
+			<div class="col-12 col-sm-6 col-md-3">
+				{include file="frontend/objects/monograph_summary.tpl" monograph=$monograph isFeatured=$isFeatured heading=$monographHeading authorUserGroups=$authorUserGroups}
+			</div>
+		{/foreach}
+	</div>
 </div>
