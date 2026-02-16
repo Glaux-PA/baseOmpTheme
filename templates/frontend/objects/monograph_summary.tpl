@@ -35,19 +35,4 @@
 		<div class="date">
 			{$monograph->getDatePublished()|date_format:$dateFormatLong}
 		</div>
-
-		{* Download Metrics (for submissions) *}
-		{if isset($submissionDownloads)}
-			<div class="metrics-wrapper">
-				<p class="metrics-downloads">
-					{if method_exists($monograph, 'getCurrentPublication')}
-						<span>{$submissionDownloads[$monograph->getId()]|intval}</span>
-						{translate key="article.MetricasDescargas"}
-					{else}
-						<span>{$submissionDownloads[$monograph->getData("submissionId")]|intval}</span>
-						{translate key="article.MetricasDescargas"}
-					{/if}
-				</p>
-			</div>
-		{/if}
 </div><!-- .obj_monograph_summary -->
