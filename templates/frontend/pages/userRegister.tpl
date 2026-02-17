@@ -1,7 +1,7 @@
 {**
  * templates/frontend/pages/userRegister.tpl
  *
- * Copyright (c) 2026 GLAUX Publicaciones Académicas.
+ * Copyright (c) 2025 GLAUX Publicaciones Académicas.
  *
  * User registration form.
  *
