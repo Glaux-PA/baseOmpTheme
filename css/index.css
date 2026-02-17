@@ -4897,12 +4897,6 @@ a:hover, a:focus, a:active {
   color: #fff;
 }
 
-.page.page_register,
-.page.page_register_complete,
-.page.page_lost_password {
-  padding-bottom: 0;
-}
-
 .page_register_complete {
   padding-bottom: 4rem;
 }
