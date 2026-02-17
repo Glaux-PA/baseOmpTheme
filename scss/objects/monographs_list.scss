@@ -2,7 +2,6 @@
 	margin-top: $spacer;
 	padding-top: $spacer * 3;
 	padding-bottom: $spacer * 3;
-	background: $gray-bg-light;
 	
 	.monographs_list_title {
 		font-weight: $font-weight-light;
@@ -18,7 +17,6 @@
 		margin-top: $spacer * 3;
 	}
 }
-
 
 .monograph_grid {
 	display: grid;
