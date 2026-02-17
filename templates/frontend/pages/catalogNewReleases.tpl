@@ -12,25 +12,25 @@
 {include file="frontend/components/header.tpl" pageTitle="catalog.newReleases"}
 
 <div class="page page_catalog_new_releases">
+	<div class="container">
+		{* Breadcrumb *}
+		{include file="frontend/components/breadcrumbs_catalog.tpl" currentTitleKey="catalog.newReleases"}
+		<h1>{translate key="catalog.newReleases"}</h1>
 
-	{* Breadcrumb *}
-	{include file="frontend/components/breadcrumbs_catalog.tpl" currentTitleKey="catalog.newReleases"}
-	<h1>{translate key="catalog.newReleases"}</h1>
+		{* Count of new releases being dispalyed *}
+		<div class="monograph_count">
+			{translate key="catalog.browseTitles" numTitles=$publishedSubmissions|@count}
+		</div>
 
-	{* Count of new releases being dispalyed *}
-	<div class="monograph_count">
-		{translate key="catalog.browseTitles" numTitles=$publishedSubmissions|@count}
-	</div>
+		{* No published titles in this category *}
+		{if empty($publishedSubmissions)}
+			<p>{translate key="catalog.noTitlesNew"}</p>
 
-	{* No published titles in this category *}
-	{if empty($publishedSubmissions)}
-		<p>{translate key="catalog.noTitlesNew"}</p>
+		{else}
+			{include file="frontend/components/monographList.tpl" monographs=$publishedSubmissions authorUserGroups=$authorUserGroups}
 
-	{else}
-		{include file="frontend/components/monographList.tpl" monographs=$publishedSubmissions authorUserGroups=$authorUserGroups}
-
-	{/if}
-
+		{/if}
+	</div><!-- .container -->
 </div><!-- .page -->
 
 {include file="frontend/components/footer.tpl"}
