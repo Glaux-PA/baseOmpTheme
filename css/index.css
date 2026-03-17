@@ -4767,10 +4767,9 @@ a:hover, a:focus, a:active {
   position: relative;
   width: 300px;
 }
-.citation .citation_display .citation_formats .citation_formats_button .bi {
-  padding-left: 2rem;
-  position: absolute;
-  right: 1rem;
+.citation .citation_display .citation_formats .citation_formats_button:after {
+  font-family: bootstrap-icons !important;
+  content: "\f229";
 }
 .citation .citation_display .citation_formats .citation_formats_list {
   padding: 1rem;
