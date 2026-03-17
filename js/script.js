@@ -12,23 +12,24 @@ $(document).ready(function () {
     $(".overlay-menu-wrapper").toggleClass("is-open");
   });
 
-  // Click "Cómo citar"
-  $("#btn_modal_how_to_cite").click(function () {
-    $(".modal_window_wrapper.how_to_cite").toggleClass("hidden-element");
-  });
+// Escuchamos el clic en el botón "Más formatos de cita"
+    $(".citation_formats_button").on("click", function(e) {
+        e.preventDefault(); // Evita cualquier comportamiento por defecto del botón
+        
+        // El contenedor de la lista en OMP tiene el ID #cslCitationFormats
+        var $listaFormatos = $("#cslCitationFormats");
+        
+        // Alternamos la visibilidad
+        // Nota: OMP suele usar la clase 'hidden-element' o el atributo 'aria-hidden'
+        $listaFormatos.toggleClass("hidden-element");
 
-  $(".citation .citation_formats_button").click(function () {
-    $(".citation .citation_formats_list").toggleClass("hidden-element");
-  });
+        // Actualizamos el estado de accesibilidad para que el navegador sepa que se desplegó
+        var isHidden = $listaFormatos.hasClass("hidden-element");
+        $(this).attr("aria-expanded", !isHidden);
+        $listaFormatos.attr("aria-hidden", isHidden);
+    });
 
-  $("#close_button_how_to_cite").click(function () {
-    $(".modal_window_wrapper.how_to_cite").toggleClass("hidden-element");
-  });
 
-  // Click "Info sobre autores"
-  $("#btn_modal_authors_list").click(function () {
-    $(".modal_window_wrapper.authors_list").toggleClass("hidden-element");
-  });
 
   $("#close_button_authors_list").click(function () {
     $(".modal_window_wrapper.authors_list").toggleClass("hidden-element");
