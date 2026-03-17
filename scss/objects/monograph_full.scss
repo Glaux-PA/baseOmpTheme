@@ -47,6 +47,18 @@
 		}
 	}
 
+	.chapters {
+		ul {
+			list-style: none;
+			margin: 0;
+		}
+
+		.title {
+			font-weight: $font-weight-medium;
+			margin-bottom: $spacer / 2;
+		}
+	}
+
 	.doi, 
 	.published,
 	.authors {
