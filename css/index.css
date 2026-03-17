@@ -4515,8 +4515,7 @@ a:hover, a:focus, a:active {
   margin-top: 2rem;
 }
 .obj_monograph_full .entry_details {
-  padding: 2rem;
-  background: #f7f8ed;
+  margin-top: 3rem;
 }
 .obj_monograph_full .entry_license {
   margin-top: 2rem;
