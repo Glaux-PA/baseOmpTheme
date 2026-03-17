@@ -4415,6 +4415,7 @@ a:hover, a:focus, a:active {
 .obj_monograph_full .chapters ul {
   list-style: none;
   margin: 0;
+  padding: 0;
 }
 .obj_monograph_full .chapters .title {
   font-weight: 500;
