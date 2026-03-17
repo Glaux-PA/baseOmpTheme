@@ -4758,6 +4758,7 @@ a:hover, a:focus, a:active {
 }
 .citation .citation_display .citation_formats {
   margin-top: 2rem;
+  border: 0;
 }
 .citation .citation_display .citation_formats .citation_formats_button {
   background: #fff;
