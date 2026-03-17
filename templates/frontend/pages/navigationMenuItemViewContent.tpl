@@ -9,7 +9,9 @@
  *}
 {include file="frontend/components/header.tpl" pageTitleTranslated=$title}
 
-{include file="frontend/components/breadcrumbs.tpl" currentTitle=$title}
+<div class="container">
+	{include file="frontend/components/breadcrumbs.tpl" currentTitle=$title}
+</div>
 
 <div class="page">
 	<div class="container">
