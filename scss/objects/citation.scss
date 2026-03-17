@@ -16,10 +16,9 @@
 				position: relative;
 				width: 300px;
 
-				.bi {
-					padding-left: $spacer * 2;
-					position: absolute;
-					right: $spacer;
+				&:after {
+					font-family: bootstrap-icons !important;
+					content: "\f229";
 				}
 			}
 
