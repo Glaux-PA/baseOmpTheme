@@ -12,23 +12,30 @@ $(document).ready(function () {
     $(".overlay-menu-wrapper").toggleClass("is-open");
   });
 
-// Escuchamos el clic en el botón "Más formatos de cita"
-    $(".citation_formats_button").on("click", function(e) {
-        e.preventDefault(); // Evita cualquier comportamiento por defecto del botón
-        
-        // El contenedor de la lista en OMP tiene el ID #cslCitationFormats
-        var $listaFormatos = $("#cslCitationFormats");
-        
-        // Alternamos la visibilidad
-        // Nota: OMP suele usar la clase 'hidden-element' o el atributo 'aria-hidden'
-        $listaFormatos.toggleClass("hidden-element");
+  // Usamos $(document).on para asegurar que funcione aunque el botón se cargue por AJAX
+  $(document).on("click", ".citation_formats_button", function(e) {
+      e.preventDefault();
+      e.stopPropagation(); // Evita que el clic se propague a otros elementos
 
-        // Actualizamos el estado de accesibilidad para que el navegador sepa que se desplegó
-        var isHidden = $listaFormatos.hasClass("hidden-element");
-        $(this).attr("aria-expanded", !isHidden);
-        $listaFormatos.attr("aria-hidden", isHidden);
-    });
+      var $listaFormatos = $("#cslCitationFormats");
+      
+      // Forzamos la eliminación de cualquier atributo 'hidden' nativo de HTML5 
+      // que OMP pudiera haber insertado y que toggleClass no toca.
+      if ($listaFormatos.attr("hidden")) {
+          $listaFormatos.removeAttr("hidden");
+      }
 
+      // Cambiamos la clase
+      $listaFormatos.toggleClass("hidden-element");
+
+      // Sincronizamos los estados de accesibilidad
+      var isVisible = !$listaFormatos.hasClass("hidden-element");
+      $(this).attr("aria-expanded", isVisible);
+      $listaFormatos.attr("aria-hidden", !isVisible);
+      
+      // Log para debug (puedes borrarlo luego)
+      console.log("Menú de citas toggle: ", isVisible ? "Visible" : "Oculto");
+  });
 
 
   $("#close_button_authors_list").click(function () {
