@@ -12,12 +12,14 @@
 {include file="frontend/components/header.tpl" pageTitle="about.editorialTeam"}
 
 <div class="page page_editorial_team">
-	{include file="frontend/components/breadcrumbs.tpl" currentTitleKey="about.editorialTeam"}
-	<h1>
-		{translate key="about.editorialTeam"}
-	</h1>
-	{include file="frontend/components/editLink.tpl" page="management" op="settings" path="context" anchor="masthead" sectionTitleKey="about.editorialTeam"}
-	{$currentContext->getLocalizedData('editorialTeam')}
+	<div class="container">
+		{include file="frontend/components/breadcrumbs.tpl" currentTitleKey="about.editorialTeam"}
+		<h1>
+			{translate key="about.editorialTeam"}
+		</h1>
+		{include file="frontend/components/editLink.tpl" page="management" op="settings" path="context" anchor="masthead" sectionTitleKey="about.editorialTeam"}
+		{$currentContext->getLocalizedData('editorialTeam')}
+	</div>
 </div><!-- .page -->
 
 {include file="frontend/components/footer.tpl"}
