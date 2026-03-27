@@ -4034,40 +4034,6 @@ a:hover, a:focus, a:active {
   text-align: center;
 }
 
-.modal_window_wrapper {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(0, 0, 0, 0.4);
-  z-index: 999999;
-  overflow: auto;
-  height: 100%;
-  margin-top: 0;
-}
-.modal_window_wrapper .modal_window {
-  position: relative;
-  max-width: 500px;
-  margin: auto;
-  background-color: #fff;
-  padding: 3rem 2rem;
-  margin-top: 3rem;
-}
-.modal_window_wrapper .downloads_chart.modal_window {
-  max-width: 800px;
-}
-.modal_window_wrapper .close_button {
-  position: absolute;
-  right: 1rem;
-  top: 1rem;
-  cursor: pointer;
-  padding: 0.2rem 0.3rem;
-  border-radius: 2px;
-  color: #212529;
-  font-size: 1.5rem;
-  font-weight: normal !important;
-}
-
 .share_block .title {
   font-size: 1.25rem;
   font-family: "Work Sans", sans-serif;
@@ -4719,7 +4685,7 @@ a:hover, a:focus, a:active {
   color: #212529;
 }
 
-.addiotional_content {
+.additional_content {
   font-size: 0.9375rem;
   margin-top: 2rem;
 }
