@@ -4785,6 +4785,16 @@ a:hover, a:focus, a:active {
   color: #212529;
 }
 
+.addiotional_content .title {
+  font-size: 1.25rem;
+  margin-top: 2rem;
+  font-weight: 700;
+}
+.addiotional_content ul {
+  padding-left: 0;
+  list-style: none;
+}
+
 .page_homepage .container.is-widther {
   max-width: 1460px;
 }
