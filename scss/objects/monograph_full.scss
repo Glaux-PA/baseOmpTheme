@@ -139,31 +139,6 @@
 		}
 	}
 
-	.chapters_list {
-		margin-top: $spacer * 3;
-		margin-top: $spacer * 3;
-
-		.row > div {
-			margin-bottom: $spacer * 2;
-		}
-		
-		.chapters_list_title {
-			font-weight: $font-weight-light;
-			font-size: $h2-font-size;
-			line-height: $line-height-xs;
-			font-family: $font-family-sans-serif;
-			margin-bottom: $spacer * 2;
-		}
-
-		.chapter_summary {
-			height: 100%;
-
-			.files {
-				margin-top: $spacer * 2;
-			}
-		}
-	}
-
 	.entry_details {
 		margin-top: 3 * $spacer;
 	}
