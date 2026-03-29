@@ -4312,15 +4312,6 @@ a:hover, a:focus, a:active {
   margin-bottom: 0;
   color: #212529;
 }
-.obj_monograph_full .chapters ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-.obj_monograph_full .chapters .title {
-  font-weight: 500;
-  margin-bottom: 0.5rem;
-}
 .obj_monograph_full .doi,
 .obj_monograph_full .published,
 .obj_monograph_full .authors {
