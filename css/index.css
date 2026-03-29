@@ -4385,26 +4385,6 @@ a:hover, a:focus, a:active {
   background: #fff;
   top: 0;
 }
-.obj_monograph_full .chapters_list {
-  margin-top: 3rem;
-  margin-top: 3rem;
-}
-.obj_monograph_full .chapters_list .row > div {
-  margin-bottom: 2rem;
-}
-.obj_monograph_full .chapters_list .chapters_list_title {
-  font-weight: 300;
-  font-size: 2.25rem;
-  line-height: 1.05;
-  font-family: "Work Sans", sans-serif;
-  margin-bottom: 2rem;
-}
-.obj_monograph_full .chapters_list .chapter_summary {
-  height: 100%;
-}
-.obj_monograph_full .chapters_list .chapter_summary .files {
-  margin-top: 2rem;
-}
 .obj_monograph_full .entry_details {
   margin-top: 3rem;
 }
@@ -4463,6 +4443,27 @@ a:hover, a:focus, a:active {
 }
 .files .cmp_download_link:hover, .files .cmp_download_link:focus, .files .cmp_download_link:active {
   background-color: #59b893;
+}
+
+.chapters_list {
+  margin-top: 3rem;
+  margin-top: 3rem;
+}
+.chapters_list .row > div {
+  margin-bottom: 2rem;
+}
+.chapters_list .chapters_list_title {
+  font-weight: 500;
+  font-size: 2.25rem;
+  line-height: 1.05;
+  font-family: "Work Sans", sans-serif;
+  margin-bottom: 2rem;
+}
+.chapters_list .chapter_summary {
+  height: 100%;
+}
+.chapters_list .chapter_summary .files {
+  margin-top: 2rem;
 }
 
 .obj_chapter {
@@ -4562,20 +4563,6 @@ a:hover, a:focus, a:active {
 .obj_chapter .item.references {
   height: 400px;
   overflow: scroll;
-}
-.obj_chapter .chapters_list {
-  margin-top: 3rem;
-  margin-top: 3rem;
-}
-.obj_chapter .chapters_list .chapters_list_title {
-  font-weight: 300;
-  font-size: 2.25rem;
-  line-height: 1.05;
-  font-family: "Work Sans", sans-serif;
-  margin-bottom: 2rem;
-}
-.obj_chapter .chapters_list .chapter_summary .files {
-  margin-top: 2rem;
 }
 .obj_chapter .entry_license {
   margin-top: 2rem;
